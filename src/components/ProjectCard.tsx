@@ -5,7 +5,6 @@ interface ProjectCardProps {
   title: string
   description: string
   technologies: string[]
-  image: string
   liveUrl?: string
   githubUrl?: string
   year: string
@@ -16,7 +15,6 @@ const ProjectCard = ({
   title, 
   description, 
   technologies, 
-  image, 
   liveUrl, 
   githubUrl, 
   year, 

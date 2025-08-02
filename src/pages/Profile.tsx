@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ExternalLink, Trophy, Code, Users, TrendingUp, Award } from 'lucide-react'
+import { ExternalLink, Trophy } from 'lucide-react'
 
 const Profile = () => {
   const profiles = [

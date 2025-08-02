@@ -8,7 +8,7 @@ const ScrollProgress = () => {
     const updateScrollProgress = () => {
       const scrollPx = document.documentElement.scrollTop
       const winHeightPx = document.documentElement.scrollHeight - document.documentElement.clientHeight
-      const scrolled = `${(scrollPx / winHeightPx) * 100}%`
+      // Calculate scroll percentage
       setScrollProgress(scrollPx / winHeightPx)
     }
 

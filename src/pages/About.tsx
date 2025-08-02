@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Code, BookOpen, Music, Camera, Gamepad2, Users, Heart, Book, Star, Zap, Award } from 'lucide-react'
+import { Code, BookOpen, Users, Heart, Book } from 'lucide-react'
 
 const About = () => {
   const skillCategories = [

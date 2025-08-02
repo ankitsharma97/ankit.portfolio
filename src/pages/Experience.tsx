@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Briefcase, Calendar, MapPin, ExternalLink, Award, Users, Zap, Code } from 'lucide-react'
+import { Calendar, MapPin, ExternalLink, Award, Zap, Code } from 'lucide-react'
 
 const Experience = () => {
   const internships = [
