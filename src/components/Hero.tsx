@@ -137,38 +137,43 @@ const Hero = () => {
             </motion.div>
           </motion.div>
 
-          {/* Right Column - Visual Element */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="relative"
-          >
-            <div className="relative bg-gradient-to-br from-primary-500/20 to-purple-500/20 rounded-2xl p-8">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-dark-800 rounded-lg p-4">
-                  <Zap className="w-8 h-8 text-primary-500 mb-2" />
-                  <h3 className="font-semibold">Problem Solver</h3>
-                  <p className="text-sm text-gray-400">LeetCode, GeeksforGeeks</p>
-                </div>
-                <div className="bg-dark-800 rounded-lg p-4">
-                  <Users className="w-8 h-8 text-primary-500 mb-2" />
-                  <h3 className="font-semibold">Team Player</h3>
-                  <p className="text-sm text-gray-400">Collaborative development</p>
-                </div>
-                <div className="bg-dark-800 rounded-lg p-4">
-                  <Code className="w-8 h-8 text-primary-500 mb-2" />
-                  <h3 className="font-semibold">Full Stack</h3>
-                  <p className="text-sm text-gray-400">React, Django, Python</p>
-                </div>
-                <div className="bg-dark-800 rounded-lg p-4">
-                  <Zap className="w-8 h-8 text-primary-500 mb-2" />
-                  <h3 className="font-semibold">ML/AI</h3>
-                  <p className="text-sm text-gray-400">Learning & exploring</p>
-                </div>
-              </div>
-            </div>
-          </motion.div>
+                         {/* Right Column - Visual Element */}
+               <motion.div
+                 initial={{ opacity: 0, x: 50 }}
+                 animate={{ opacity: 1, x: 0 }}
+                 transition={{ duration: 0.8, delay: 0.3 }}
+                 className="relative"
+               >
+                 <div className="relative bg-gradient-to-br from-primary-500/20 to-purple-500/20 rounded-2xl p-8">
+                   <img 
+                     src="/src/assets/images/HERO.jpeg" 
+                     alt="Ankit Sharma - Full Stack Developer"
+                     className="w-full h-auto rounded-xl mb-6"
+                   />
+                   <div className="grid grid-cols-2 gap-4">
+                     <div className="bg-dark-800 rounded-lg p-4">
+                       <Zap className="w-8 h-8 text-primary-500 mb-2" />
+                       <h3 className="font-semibold">Problem Solver</h3>
+                       <p className="text-sm text-gray-400">LeetCode, GeeksforGeeks</p>
+                     </div>
+                     <div className="bg-dark-800 rounded-lg p-4">
+                       <Users className="w-8 h-8 text-primary-500 mb-2" />
+                       <h3 className="font-semibold">Team Player</h3>
+                       <p className="text-sm text-gray-400">Collaborative development</p>
+                     </div>
+                     <div className="bg-dark-800 rounded-lg p-4">
+                       <Code className="w-8 h-8 text-primary-500 mb-2" />
+                       <h3 className="font-semibold">Full Stack</h3>
+                       <p className="text-sm text-gray-400">React, Django, Python</p>
+                     </div>
+                     <div className="bg-dark-800 rounded-lg p-4">
+                       <Zap className="w-8 h-8 text-primary-500 mb-2" />
+                       <h3 className="font-semibold">ML/AI</h3>
+                       <p className="text-sm text-gray-400">Learning & exploring</p>
+                     </div>
+                   </div>
+                 </div>
+               </motion.div>
         </div>
       </div>
     </section>

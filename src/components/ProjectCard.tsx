@@ -5,6 +5,7 @@ interface ProjectCardProps {
   title: string
   description: string
   technologies: string[]
+  image: string
   liveUrl?: string
   githubUrl?: string
   year: string
@@ -15,6 +16,7 @@ const ProjectCard = ({
   title, 
   description, 
   technologies, 
+  image,
   liveUrl, 
   githubUrl, 
   year, 
@@ -30,12 +32,12 @@ const ProjectCard = ({
     >
       {/* Image */}
       <div className="relative h-48 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 to-purple-500/20" />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-6xl opacity-20 group-hover:scale-110 transition-transform duration-300">
-            {category === 'React' ? '⚛️' : category === 'Django' ? '🎯' : category === 'ML/AI' ? '🤖' : '🚀'}
-          </div>
-        </div>
+        <img 
+          src={image} 
+          alt={title}
+          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 to-purple-500/20 opacity-60 group-hover:opacity-40 transition-opacity duration-300" />
         
         {/* Overlay on hover */}
         <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
