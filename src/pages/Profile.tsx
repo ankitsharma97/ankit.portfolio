@@ -8,7 +8,7 @@ const Profile = () => {
       description: "Sharpen coding skills, tackle algorithmic challenges, enhance problem-solving abilities, and prepare for technical interviews.",
       url: "https://leetcode.com/u/ankit972125/",
       icon: "💻",
-      image: "/src/assets/images/leetcode.png",
+      image: "/images/leetcode.png",
       category: "Problem Solving",
       achievements: ["Algorithm Practice", "Data Structures", "Competitive Programming"],
       color: "from-orange-500/20 to-red-500/20"
@@ -18,7 +18,7 @@ const Profile = () => {
       description: "Showcases projects, fosters collaboration, and highlights coding prowess with open source contributions.",
       url: "https://github.com/ankitsharma97",
       icon: "🐙",
-      image: "/src/assets/images/github.png",
+      image: "/images/github.png",
       category: "Code Repository",
       achievements: ["15+ Projects", "Open Source", "Collaboration"],
       color: "from-gray-500/20 to-black/20"
@@ -28,7 +28,7 @@ const Profile = () => {
       description: "Profiles professional experience and connects with peers in the tech industry.",
       url: "https://www.linkedin.com/in/ankit-sharma-64aa32255/",
       icon: "💼",
-      image: "/src/assets/images/linkedin.png",
+      image: "/images/linkedin.png",
       category: "Professional Network",
       achievements: ["Networking", "Career Growth", "Industry Connections"],
       color: "from-blue-500/20 to-blue-600/20"
@@ -38,7 +38,7 @@ const Profile = () => {
       description: "Enhance problem-solving skills, practice algorithms and data structures, and prepare for technical interviews.",
       url: "https://www.geeksforgeeks.org/user/ankit_sharma0616/",
       icon: "📚",
-      image: "/src/assets/images/gfg.png",
+      image: "/images/gfg.png",
       category: "Learning Platform",
       achievements: ["DSA Practice", "Interview Prep", "Skill Development"],
       color: "from-green-500/20 to-green-600/20"
@@ -48,7 +48,7 @@ const Profile = () => {
       description: "Share insights, connect with the tech community, and stay updated with latest trends.",
       url: "https://twitter.com/ANKITSH0161",
       icon: "🐦",
-      image: "/src/assets/images/twitter.png",
+      image: "/images/twitter.png",
       category: "Social Media",
       achievements: ["Tech Community", "Knowledge Sharing", "Networking"],
       color: "from-blue-400/20 to-blue-500/20"
@@ -58,7 +58,7 @@ const Profile = () => {
       description: "Sharpen coding skills, tackle algorithmic challenges, enhance problem-solving abilities, and prepare for technical interviews.",
       url: "https://www.hackerrank.com/profile/ankit972125/",
       icon: "⚡",
-      image: "/src/assets/images/hackerrank.png",
+      image: "/images/hackerrank.png",
       category: "Coding Platform",
       achievements: ["Skill Assessment", "Problem Solving", "Certification"],
       color: "from-green-400/20 to-green-500/20"

@@ -146,7 +146,7 @@ const Hero = () => {
                >
                  <div className="relative bg-gradient-to-br from-primary-500/20 to-purple-500/20 rounded-2xl p-8">
                    <img 
-                     src="/src/assets/images/HERO.jpeg" 
+                     src="/images/HERO.jpeg" 
                      alt="Ankit Sharma - Full Stack Developer"
                      className="w-full h-auto rounded-xl mb-6"
                    />

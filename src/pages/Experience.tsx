@@ -19,7 +19,7 @@ const Experience = () => {
         "Collaborated on cutting-edge AI integration projects"
       ],
       technologies: ["Next.js", "TypeScript", "React", "Strapi CMS", "OpenAI API", "Pinecone", "GraphQL"],
-      image: "/src/assets/images/codsoft.png"
+      image: "/images/codsoft.png"
     },
     {
       company: "Hirreetech Consulting and Services",
@@ -37,7 +37,7 @@ const Experience = () => {
         "Collaborated with development teams for seamless delivery"
       ],
       technologies: ["React", "Redux", "Tailwind CSS", "JavaScript", "API Integration", "Performance Optimization"],
-      image: "/src/assets/images/dj_intern.png"
+      image: "/images/dj_intern.png"
     },
     {
       company: "Fox Global Technologies",
@@ -55,7 +55,7 @@ const Experience = () => {
         "Implemented RESTful architecture and best practices"
       ],
       technologies: ["Django", "Python", "Celery", "Docker", "CI/CD", "PostgreSQL", "REST API"],
-      image: "/src/assets/images/dj_intern.png"
+      image: "/images/dj_intern.png"
     }
   ]
 
@@ -65,28 +65,28 @@ const Experience = () => {
       issuer: "HackerRank",
       date: "2024",
       certificate: "https://drive.google.com/file/d/1xkRcQ0HJ2t1ZTghIj3AkWeCopFPWBdbq/view?usp=sharing",
-      image: "/src/assets/images/prob.png"
+      image: "/images/prob.png"
     },
     {
       name: "Cyber Security",
       issuer: "Simplilearn",
       date: "2024",
       certificate: "https://drive.google.com/file/d/1Xl_jCteXrmoN5aArG-Tr4lTka7mbRGQ_/view?usp=drive_link",
-      image: "/src/assets/images/simple.png"
+      image: "/images/simple.png"
     },
     {
       name: "AWS S3 Basics",
       issuer: "AWS",
       date: "2024",
       certificate: "https://drive.google.com/file/d/1et4s5CHgIjFAt3f5fj95yzgPh741ONIB/view?usp=sharing",
-      image: "/src/assets/images/aws.png"
+      image: "/images/aws.png"
     },
     {
       name: "Web Dev Workshop",
       issuer: "Microsoft",
       date: "2024",
       certificate: "https://drive.google.com/file/d/1kcD4EwBRqB6uy9Jbn6pB8y4gCFPPDquO/view?usp=drive_link",
-      image: "/src/assets/images/ms.png"
+      image: "/images/ms.png"
     }
   ]
 
