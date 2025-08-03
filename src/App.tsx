@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import ScrollToTop from './components/ScrollToTop'
 import ScrollProgress from './components/ScrollProgress'
-import ThemeToggle from './components/ThemeToggle'
 import Home from './pages/Home'
 import Experience from './pages/Experience'
 import Projects from './pages/Projects'
@@ -13,9 +12,8 @@ import Contact from './pages/Contact'
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-dark-900">
+      <div className="min-h-screen bg-white dark:bg-dark-900">
         <ScrollProgress />
-        <ThemeToggle />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

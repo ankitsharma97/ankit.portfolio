@@ -124,15 +124,15 @@ const About = () => {
               <h2 className="text-2xl font-bold mb-4">Technical Expertise</h2>
               
               {/* Experience Level Legend */}
-              <div className="bg-dark-800 rounded-lg p-4 mb-6">
-                <h3 className="font-semibold mb-3 text-white">Experience Levels</h3>
+              <div className="bg-white dark:bg-dark-800 rounded-lg p-4 mb-6 border border-gray-200 dark:border-dark-700">
+                <h3 className="font-semibold mb-3 text-blue-900 dark:text-white">Experience Levels</h3>
                 <div className="space-y-2">
                   {Object.entries(experienceLevels).map(([level, config]) => (
                     <div key={level} className="flex items-center space-x-3">
                       <span className={`px-2 py-1 rounded text-xs font-medium ${config.bg} ${config.color}`}>
                         {level}
                       </span>
-                      <span className="text-sm text-gray-400">{config.description}</span>
+                      <span className="text-sm text-blue-700 dark:text-gray-400">{config.description}</span>
                     </div>
                   ))}
                 </div>
@@ -140,21 +140,21 @@ const About = () => {
 
               {/* Quick Stats */}
                                    <div className="grid grid-cols-2 gap-4">
-                       <div className="bg-dark-800 rounded-lg p-4 text-center">
-                         <div className="text-2xl font-bold text-primary-500">20+</div>
-                         <div className="text-sm text-gray-400">Projects Built</div>
+                       <div className="bg-white dark:bg-dark-800 rounded-lg p-4 text-center border border-gray-200 dark:border-dark-700">
+                         <div className="text-2xl font-bold text-blue-600 dark:text-primary-500">20+</div>
+                         <div className="text-sm text-blue-700 dark:text-gray-400">Projects Built</div>
                        </div>
-                       <div className="bg-dark-800 rounded-lg p-4 text-center">
-                         <div className="text-2xl font-bold text-primary-500">1000+</div>
-                         <div className="text-sm text-gray-400">Problems Solved</div>
+                       <div className="bg-white dark:bg-dark-800 rounded-lg p-4 text-center border border-gray-200 dark:border-dark-700">
+                         <div className="text-2xl font-bold text-blue-600 dark:text-primary-500">1000+</div>
+                         <div className="text-sm text-blue-700 dark:text-gray-400">Problems Solved</div>
                        </div>
-                       <div className="bg-dark-800 rounded-lg p-4 text-center">
-                         <div className="text-2xl font-bold text-primary-500">3</div>
-                         <div className="text-sm text-gray-400">Internships</div>
+                       <div className="bg-white dark:bg-dark-800 rounded-lg p-4 text-center border border-gray-200 dark:border-dark-700">
+                         <div className="text-2xl font-bold text-blue-600 dark:text-primary-500">3</div>
+                         <div className="text-sm text-blue-700 dark:text-gray-400">Internships</div>
                        </div>
-                       <div className="bg-dark-800 rounded-lg p-4 text-center">
-                         <div className="text-2xl font-bold text-primary-500">5★</div>
-                         <div className="text-sm text-gray-400">HackerRank C++</div>
+                       <div className="bg-white dark:bg-dark-800 rounded-lg p-4 text-center border border-gray-200 dark:border-dark-700">
+                         <div className="text-2xl font-bold text-blue-600 dark:text-primary-500">5★</div>
+                         <div className="text-sm text-blue-700 dark:text-gray-400">HackerRank C++</div>
                        </div>
                      </div>
             </motion.div>
@@ -175,19 +175,19 @@ const About = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.7 + index * 0.1 }}
-                  className="bg-dark-800 rounded-xl p-6 border border-dark-700"
+                  className="bg-white dark:bg-dark-800 rounded-xl p-6 border border-gray-200 dark:border-dark-700"
                 >
                   <h3 className="text-xl font-bold mb-4 text-primary-500">{category.category}</h3>
                   <div className="space-y-3">
                     {category.skills.map((skill) => {
                       const levelConfig = experienceLevels[skill.level as keyof typeof experienceLevels]
                       return (
-                        <div key={skill.name} className="flex items-center justify-between p-3 bg-dark-700 rounded-lg">
+                        <div key={skill.name} className="flex items-center justify-between p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
                           <div className="flex items-center space-x-3">
                             <span className="text-xl">{skill.icon}</span>
                             <div>
-                              <div className="font-medium text-white">{skill.name}</div>
-                              <div className="text-xs text-gray-400">{skill.projects} projects</div>
+                              <div className="font-medium text-blue-900 dark:text-white">{skill.name}</div>
+                              <div className="text-xs text-blue-700 dark:text-gray-400">{skill.projects} projects</div>
                             </div>
                           </div>
                           <span className={`px-2 py-1 rounded text-xs font-medium ${levelConfig.bg} ${levelConfig.color}`}>
@@ -215,17 +215,17 @@ const About = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.9 }}
-                className="bg-dark-800 rounded-xl p-6 border border-dark-700"
+                className="bg-white dark:bg-dark-800 rounded-xl p-6 border border-gray-200 dark:border-dark-700"
               >
                 <h3 className="text-xl font-bold mb-4 text-primary-500">Education</h3>
                 <div className="space-y-4">
-                                       <div className="p-4 bg-dark-700 rounded-lg">
+                                       <div className="p-4 bg-gray-100 dark:bg-dark-700 rounded-lg">
                        <div className="flex justify-between items-start mb-2">
-                         <h4 className="font-semibold text-white">Bachelor of Technology in Information Technology</h4>
-                         <span className="text-sm text-gray-400">2022 - 2026</span>
+                         <h4 className="font-semibold text-gray-900 dark:text-white">Bachelor of Technology in Information Technology</h4>
+                         <span className="text-sm text-gray-600 dark:text-gray-400">2022 - 2026</span>
                        </div>
-                       <p className="text-primary-500 font-medium">Rajkiya Engineering College, Azamgarh</p>
-                       <ul className="text-sm text-gray-400 mt-2 space-y-1">
+                       <p className="text-blue-600 dark:text-primary-500 font-medium">Rajkiya Engineering College, Azamgarh</p>
+                       <ul className="text-sm text-gray-600 dark:text-gray-400 mt-2 space-y-1">
                          <li>• Currently pursuing B.Tech in Information Technology</li>
                          <li>• Relevant coursework: Data Structures & Algorithms, OOP, OS, DBMS, Computer Networking</li>
                          <li>• Active participation in coding competitions and hackathons</li>
@@ -238,32 +238,32 @@ const About = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1.0 }}
-                className="bg-dark-800 rounded-xl p-6 border border-dark-700"
+                className="bg-white dark:bg-dark-800 rounded-xl p-6 border border-gray-200 dark:border-dark-700"
               >
                 <h3 className="text-xl font-bold mb-4 text-primary-500">Certifications</h3>
                 <div className="space-y-3">
-                  <div className="p-3 bg-dark-700 rounded-lg">
+                  <div className="p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
                     <div className="flex justify-between items-center">
-                      <span className="font-medium text-white">Problem Basic Skill</span>
-                      <span className="text-xs text-gray-400">HackerRank</span>
+                      <span className="font-medium text-gray-900 dark:text-white">Problem Basic Skill</span>
+                      <span className="text-xs text-gray-600 dark:text-gray-400">HackerRank</span>
                     </div>
                   </div>
-                  <div className="p-3 bg-dark-700 rounded-lg">
+                  <div className="p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
                     <div className="flex justify-between items-center">
-                      <span className="font-medium text-white">Cyber Security</span>
-                      <span className="text-xs text-gray-400">Simplilearn</span>
+                      <span className="font-medium text-gray-900 dark:text-white">Cyber Security</span>
+                      <span className="text-xs text-gray-600 dark:text-gray-400">Simplilearn</span>
                     </div>
                   </div>
-                  <div className="p-3 bg-dark-700 rounded-lg">
+                  <div className="p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
                     <div className="flex justify-between items-center">
-                      <span className="font-medium text-white">AWS S3 Basics</span>
-                      <span className="text-xs text-gray-400">AWS</span>
+                      <span className="font-medium text-gray-900 dark:text-white">AWS S3 Basics</span>
+                      <span className="text-xs text-gray-600 dark:text-gray-400">AWS</span>
                     </div>
                   </div>
-                  <div className="p-3 bg-dark-700 rounded-lg">
+                  <div className="p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
                     <div className="flex justify-between items-center">
-                      <span className="font-medium text-white">Web Dev Workshop</span>
-                      <span className="text-xs text-gray-400">Microsoft</span>
+                      <span className="font-medium text-gray-900 dark:text-white">Web Dev Workshop</span>
+                      <span className="text-xs text-gray-600 dark:text-gray-400">Microsoft</span>
                     </div>
                   </div>
                 </div>
@@ -280,25 +280,25 @@ const About = () => {
           >
             <h2 className="text-2xl font-bold mb-8 text-center">Data Structures & Algorithms</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="bg-dark-800 rounded-xl p-6 border border-dark-700 text-center">
+              <div className="bg-white dark:bg-dark-800 rounded-xl p-6 border border-gray-200 dark:border-dark-700 text-center">
                 <div className="text-3xl mb-3">📊</div>
-                <h3 className="font-semibold text-white mb-2">Arrays & Strings</h3>
-                <p className="text-sm text-gray-400">Advanced manipulation and optimization</p>
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Arrays & Strings</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">Advanced manipulation and optimization</p>
               </div>
-              <div className="bg-dark-800 rounded-xl p-6 border border-dark-700 text-center">
+              <div className="bg-white dark:bg-dark-800 rounded-xl p-6 border border-gray-200 dark:border-dark-700 text-center">
                 <div className="text-3xl mb-3">🔗</div>
-                <h3 className="font-semibold text-white mb-2">Linked Lists</h3>
-                <p className="text-sm text-gray-400">Complex pointer operations</p>
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Linked Lists</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">Complex pointer operations</p>
               </div>
-              <div className="bg-dark-800 rounded-xl p-6 border border-dark-700 text-center">
+              <div className="bg-white dark:bg-dark-800 rounded-xl p-6 border border-gray-200 dark:border-dark-700 text-center">
                 <div className="text-3xl mb-3">🌳</div>
-                <h3 className="font-semibold text-white mb-2">Trees & Graphs</h3>
-                <p className="text-sm text-gray-400">Traversal and pathfinding</p>
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Trees & Graphs</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">Traversal and pathfinding</p>
               </div>
-              <div className="bg-dark-800 rounded-xl p-6 border border-dark-700 text-center">
+              <div className="bg-white dark:bg-dark-800 rounded-xl p-6 border border-gray-200 dark:border-dark-700 text-center">
                 <div className="text-3xl mb-3">⚡</div>
-                <h3 className="font-semibold text-white mb-2">Dynamic Programming</h3>
-                <p className="text-sm text-gray-400">Optimization techniques</p>
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Dynamic Programming</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">Optimization techniques</p>
               </div>
             </div>
           </motion.div>
@@ -318,7 +318,7 @@ const About = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 1.0 + index * 0.1 }}
-                  className="bg-dark-800 rounded-xl p-6 text-center border border-dark-700 hover:border-primary-500/50 transition-colors duration-200"
+                  className="bg-white dark:bg-dark-800 rounded-xl p-6 text-center border border-gray-200 dark:border-dark-700 hover:border-blue-500/50 dark:hover:border-primary-500/50 transition-colors duration-200"
                 >
                   <interest.icon className="w-8 h-8 text-primary-500 mx-auto mb-3" />
                   <h3 className="font-semibold mb-2">{interest.name}</h3>

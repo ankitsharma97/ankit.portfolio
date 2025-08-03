@@ -17,9 +17,9 @@ const ScrollProgress = () => {
   }, [])
 
   return (
-    <div className="fixed top-0 left-0 w-full h-1 bg-dark-700 z-50">
+    <div className="fixed top-0 left-0 w-full h-1 bg-gray-200 dark:bg-dark-700 z-50">
       <motion.div
-        className="h-full bg-gradient-to-r from-primary-500 to-purple-500"
+        className="h-full bg-gradient-to-r from-blue-600 to-purple-500 dark:from-primary-500 dark:to-purple-500"
         style={{ width: `${scrollProgress * 100}%` }}
         initial={{ width: 0 }}
         animate={{ width: `${scrollProgress * 100}%` }}

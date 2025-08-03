@@ -63,7 +63,7 @@ const Home = () => {
       <Hero />
       
       {/* Featured Projects Section */}
-      <section className="section-padding bg-dark-800/50">
+      <section className="section-padding bg-gray-100 dark:bg-dark-800/50">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -75,7 +75,7 @@ const Home = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Featured Projects
             </h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
+            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
               See how I transformed concepts into engaging digital experiences.
             </p>
           </motion.div>
@@ -101,7 +101,7 @@ const Home = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Experience & Recognition
             </h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
+            <p className="text-gray-700 dark:text-gray-400 max-w-2xl mx-auto">
               My professional journey and achievements in the tech industry.
             </p>
           </motion.div>
@@ -114,7 +114,7 @@ const Home = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-dark-800 rounded-xl p-6 border border-dark-700"
+                className="bg-white dark:bg-dark-800 rounded-xl p-6 border border-gray-200 dark:border-dark-700"
               >
                 <div className="flex items-center mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
@@ -122,12 +122,12 @@ const Home = () => {
                   ))}
                 </div>
                 <Quote className="w-8 h-8 text-primary-500 mb-4" />
-                <p className="text-gray-300 mb-4">
+                <p className="text-gray-700 dark:text-gray-300 mb-4">
                   "{testimonial.content}"
                 </p>
                 <div>
-                  <div className="font-semibold text-white">{testimonial.name}</div>
-                  <div className="text-sm text-gray-400">{testimonial.role}</div>
+                  <div className="font-semibold text-gray-900 dark:text-white">{testimonial.name}</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">{testimonial.role}</div>
                 </div>
               </motion.div>
             ))}

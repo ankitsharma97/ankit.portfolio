@@ -106,7 +106,7 @@ const Profile = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               My Profiles & Achievements
             </h1>
-            <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+            <p className="text-gray-600 dark:text-gray-400 max-w-3xl mx-auto text-lg">
               Explore my coding profiles, professional networks, and achievements across various platforms.
             </p>
           </motion.div>
@@ -126,7 +126,7 @@ const Profile = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                  className="group relative bg-dark-800 rounded-xl overflow-hidden border border-dark-700 hover:border-primary-500/50 transition-all duration-300"
+                  className="group relative bg-white dark:bg-dark-800 rounded-xl overflow-hidden border border-gray-200 dark:border-dark-700 hover:border-blue-500/50 dark:hover:border-primary-500/50 transition-all duration-300"
                 >
                   {/* Header */}
                   <div className={`bg-gradient-to-br ${profile.color} p-6`}>
@@ -142,21 +142,21 @@ const Profile = () => {
                         )}
                       </div>
                       <div className="text-right">
-                        <h3 className="font-bold text-white">{profile.name}</h3>
-                        <p className="text-sm text-gray-300">{profile.category}</p>
+                        <h3 className="font-bold text-blue-900 dark:text-white">{profile.name}</h3>
+                        <p className="text-sm text-blue-700 dark:text-gray-300">{profile.category}</p>
                       </div>
                     </div>
                   </div>
 
                   {/* Content */}
                   <div className="p-6 space-y-4">
-                    <p className="text-gray-300 text-sm leading-relaxed">
+                    <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
                       {profile.description}
                     </p>
 
                     {/* Achievements */}
                     <div>
-                      <h4 className="font-semibold text-white mb-2 flex items-center">
+                      <h4 className="font-semibold text-gray-900 dark:text-white mb-2 flex items-center">
                         <Trophy className="w-4 h-4 mr-2 text-primary-500" />
                         Key Features
                       </h4>
@@ -164,7 +164,7 @@ const Profile = () => {
                         {profile.achievements.map((achievement, idx) => (
                           <div key={idx} className="flex items-center space-x-2">
                             <div className="w-1.5 h-1.5 bg-primary-500 rounded-full"></div>
-                            <span className="text-xs text-gray-400">{achievement}</span>
+                            <span className="text-xs text-gray-600 dark:text-gray-400">{achievement}</span>
                           </div>
                         ))}
                       </div>
@@ -200,11 +200,11 @@ const Profile = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
-                  className="bg-dark-800 rounded-xl p-6 border border-dark-700 hover:border-primary-500/50 transition-colors duration-200 text-center"
+                  className="bg-white dark:bg-dark-800 rounded-xl p-6 border border-gray-200 dark:border-dark-700 hover:border-blue-500/50 dark:hover:border-primary-500/50 transition-colors duration-200 text-center"
                 >
                   <div className="text-4xl mb-4">{achievement.icon}</div>
-                  <h3 className="font-semibold text-white mb-2">{achievement.title}</h3>
-                  <p className="text-sm text-gray-400 mb-3">{achievement.description}</p>
+                  <h3 className="font-semibold text-gray-900 dark:text-white mb-2">{achievement.title}</h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">{achievement.description}</p>
                   <div className="inline-flex items-center px-3 py-1 bg-primary-500/20 text-primary-500 rounded-full text-sm font-medium">
                     {achievement.stats}
                   </div>
@@ -218,25 +218,25 @@ const Profile = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className="mt-16 bg-dark-800/50 rounded-2xl p-8 border border-dark-700"
+            className="mt-16 bg-gray-100 dark:bg-dark-800/50 rounded-2xl p-8 border border-gray-200 dark:border-dark-700"
           >
             <h2 className="text-2xl font-bold mb-6 text-center">Profile Statistics</h2>
             <div className="grid md:grid-cols-4 gap-6">
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary-500 mb-2">6</div>
-                <div className="text-sm text-gray-400">Active Profiles</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Active Profiles</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary-500 mb-2">500+</div>
-                <div className="text-sm text-gray-400">Problems Solved</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Problems Solved</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary-500 mb-2">15+</div>
-                <div className="text-sm text-gray-400">Projects Created</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Projects Created</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary-500 mb-2">2</div>
-                <div className="text-sm text-gray-400">Internships</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Internships</div>
               </div>
             </div>
           </motion.div>

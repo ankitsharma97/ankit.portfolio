@@ -22,7 +22,7 @@ const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center section-padding pt-20">
       <div className="container-custom">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Left Column - Text Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -47,7 +47,7 @@ const Hero = () => {
                 transition={{ delay: 0.3 }}
                 className="text-4xl md:text-6xl font-bold leading-tight"
               >
-                Hi, I'm <span className="text-primary-500">Ankit Sharma</span>
+                Hi, I'm <span className="text-blue-600 dark:text-primary-500">Ankit Sharma</span>
               </motion.h1>
 
               <motion.div
@@ -56,21 +56,21 @@ const Hero = () => {
                 transition={{ delay: 0.4 }}
                 className="h-12 flex items-center"
               >
-                <span className="text-2xl md:text-3xl text-gray-300 mr-2">I'm a</span>
+                <span className="text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mr-2">I'm a</span>
                 <motion.span
                   key={currentText}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.5 }}
-                  className="text-2xl md:text-3xl text-primary-500 font-bold"
+                  className="text-2xl md:text-3xl text-blue-600 dark:text-primary-500 font-bold"
                 >
                   {texts[currentText]}
                 </motion.span>
                 <motion.span
                   animate={{ opacity: [1, 0, 1] }}
                   transition={{ duration: 1, repeat: Infinity }}
-                  className="text-2xl md:text-3xl text-primary-500 ml-1"
+                  className="text-2xl md:text-3xl text-blue-600 dark:text-primary-500 ml-1"
                 >
                   |
                 </motion.span>
@@ -80,7 +80,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}
-                className="text-xl text-gray-400 max-w-2xl"
+                className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl"
               >
                 Currently pursuing Bachelor of Technology in Information Technology at Rajkiya Engineering College, Azamgarh (2022-2026). 
                 I'm a Software Engineer Intern at Meteorite Labs with expertise in Next.js, TypeScript, and AI integration. 
@@ -119,20 +119,20 @@ const Hero = () => {
               className="grid grid-cols-4 gap-6 pt-8"
             >
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary-500">20+</div>
-                <div className="text-sm text-gray-400">Projects Built</div>
+                <div className="text-2xl font-bold text-blue-600 dark:text-primary-500">20+</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Projects Built</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary-500">1000+</div>
-                <div className="text-sm text-gray-400">Problems Solved</div>
+                <div className="text-2xl font-bold text-blue-600 dark:text-primary-500">1000+</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Problems Solved</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary-500">3</div>
-                <div className="text-sm text-gray-400">Internships</div>
+                <div className="text-2xl font-bold text-blue-600 dark:text-primary-500">3</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Internships</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary-500">5★</div>
-                <div className="text-sm text-gray-400">HackerRank C++</div>
+                <div className="text-2xl font-bold text-blue-600 dark:text-primary-500">5★</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">HackerRank C++</div>
               </div>
             </motion.div>
           </motion.div>
@@ -144,32 +144,32 @@ const Hero = () => {
                  transition={{ duration: 0.8, delay: 0.3 }}
                  className="relative"
                >
-                 <div className="relative bg-gradient-to-br from-primary-500/20 to-purple-500/20 rounded-2xl p-8">
+                 <div className="relative bg-gradient-to-br from-blue-500/10 to-purple-500/10 dark:from-primary-500/20 dark:to-purple-500/20 rounded-2xl p-6 border border-gray-200 dark:border-dark-700">
                    <img 
                      src="/images/HERO.jpeg" 
                      alt="Ankit Sharma - Full Stack Developer"
-                     className="w-full h-auto rounded-xl mb-6"
+                     className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-xl mb-6 mx-auto"
                    />
                    <div className="grid grid-cols-2 gap-4">
-                     <div className="bg-dark-800 rounded-lg p-4">
-                       <Zap className="w-8 h-8 text-primary-500 mb-2" />
-                       <h3 className="font-semibold">Problem Solver</h3>
-                       <p className="text-sm text-gray-400">LeetCode, GeeksforGeeks</p>
+                     <div className="bg-white dark:bg-dark-800 rounded-lg p-4 border border-gray-200 dark:border-dark-700">
+                       <Zap className="w-8 h-8 text-blue-600 dark:text-primary-500 mb-2" />
+                       <h3 className="font-semibold text-gray-900 dark:text-white">Problem Solver</h3>
+                       <p className="text-sm text-gray-600 dark:text-gray-400">LeetCode, GeeksforGeeks</p>
                      </div>
-                     <div className="bg-dark-800 rounded-lg p-4">
-                       <Users className="w-8 h-8 text-primary-500 mb-2" />
-                       <h3 className="font-semibold">Team Player</h3>
-                       <p className="text-sm text-gray-400">Collaborative development</p>
+                     <div className="bg-white dark:bg-dark-800 rounded-lg p-4 border border-gray-200 dark:border-dark-700">
+                       <Users className="w-8 h-8 text-blue-600 dark:text-primary-500 mb-2" />
+                       <h3 className="font-semibold text-gray-900 dark:text-white">Team Player</h3>
+                       <p className="text-sm text-gray-600 dark:text-gray-400">Collaborative development</p>
                      </div>
-                     <div className="bg-dark-800 rounded-lg p-4">
-                       <Code className="w-8 h-8 text-primary-500 mb-2" />
-                       <h3 className="font-semibold">Full Stack</h3>
-                       <p className="text-sm text-gray-400">React, Django, Python</p>
+                     <div className="bg-white dark:bg-dark-800 rounded-lg p-4 border border-gray-200 dark:border-dark-700">
+                       <Code className="w-8 h-8 text-blue-600 dark:text-primary-500 mb-2" />
+                       <h3 className="font-semibold text-gray-900 dark:text-white">Full Stack</h3>
+                       <p className="text-sm text-gray-600 dark:text-gray-400">React, Django, Python</p>
                      </div>
-                     <div className="bg-dark-800 rounded-lg p-4">
-                       <Zap className="w-8 h-8 text-primary-500 mb-2" />
-                       <h3 className="font-semibold">ML/AI</h3>
-                       <p className="text-sm text-gray-400">Learning & exploring</p>
+                     <div className="bg-white dark:bg-dark-800 rounded-lg p-4 border border-gray-200 dark:border-dark-700">
+                       <Zap className="w-8 h-8 text-blue-600 dark:text-primary-500 mb-2" />
+                       <h3 className="font-semibold text-gray-900 dark:text-white">ML/AI</h3>
+                       <p className="text-sm text-gray-600 dark:text-gray-400">Learning & exploring</p>
                      </div>
                    </div>
                  </div>

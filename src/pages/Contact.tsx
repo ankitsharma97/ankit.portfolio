@@ -91,7 +91,7 @@ const Contact = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Let's Connect
             </h1>
-            <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">
               Collaboration knows no bounds, it's the bridge to boundless achievement. 
               Hand in hand, we write the story of success through collaboration.
             </p>
@@ -118,10 +118,10 @@ const Contact = () => {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className={`w-full px-4 py-3 bg-dark-800 border rounded-lg focus:outline-none transition-colors duration-200 ${
+                      className={`w-full px-4 py-3 bg-white dark:bg-dark-800 border border-gray-200 dark:border-dark-700 rounded-lg focus:outline-none transition-colors duration-200 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 ${
                         errors.name 
                           ? 'border-red-500 focus:border-red-500' 
-                          : 'border-dark-700 focus:border-primary-500'
+                          : 'focus:border-blue-500 dark:focus:border-primary-500'
                       }`}
                       placeholder="Your name"
                     />
@@ -142,10 +142,10 @@ const Contact = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className={`w-full px-4 py-3 bg-dark-800 border rounded-lg focus:outline-none transition-colors duration-200 ${
+                      className={`w-full px-4 py-3 bg-white dark:bg-dark-800 border border-gray-200 dark:border-dark-700 rounded-lg focus:outline-none transition-colors duration-200 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 ${
                         errors.email 
                           ? 'border-red-500 focus:border-red-500' 
-                          : 'border-dark-700 focus:border-primary-500'
+                          : 'focus:border-blue-500 dark:focus:border-primary-500'
                       }`}
                       placeholder="your@email.com"
                     />
@@ -167,10 +167,10 @@ const Contact = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    className={`w-full px-4 py-3 bg-dark-800 border rounded-lg focus:outline-none transition-colors duration-200 ${
+                    className={`w-full px-4 py-3 bg-white dark:bg-dark-800 border border-gray-200 dark:border-dark-700 rounded-lg focus:outline-none transition-colors duration-200 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 ${
                       errors.subject 
                         ? 'border-red-500 focus:border-red-500' 
-                        : 'border-dark-700 focus:border-primary-500'
+                        : 'focus:border-blue-500 dark:focus:border-primary-500'
                     }`}
                     placeholder="Project inquiry"
                   />
@@ -191,10 +191,10 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     rows={6}
-                    className={`w-full px-4 py-3 bg-dark-800 border rounded-lg focus:outline-none transition-colors duration-200 resize-none ${
+                    className={`w-full px-4 py-3 bg-white dark:bg-dark-800 border border-gray-200 dark:border-dark-700 rounded-lg focus:outline-none transition-colors duration-200 resize-none text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 ${
                       errors.message 
                         ? 'border-red-500 focus:border-red-500' 
-                        : 'border-dark-700 focus:border-primary-500'
+                        : 'focus:border-blue-500 dark:focus:border-primary-500'
                     }`}
                     placeholder="Tell me about your project..."
                   />
@@ -260,7 +260,7 @@ const Contact = () => {
             >
               <div>
                 <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
-                <p className="text-gray-400 mb-8">
+                <p className="text-gray-600 dark:text-gray-400 mb-8">
                   I'm always open to discussing new projects, creative ideas, 
                   or opportunities to be part of your visions.
                 </p>
@@ -274,7 +274,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold">Location</h3>
-                    <p className="text-gray-400">Gorakhpur, Uttar Pradesh, India</p>
+                    <p className="text-blue-700 dark:text-gray-400">Gorakhpur, Uttar Pradesh, India</p>
                   </div>
                 </div>
 
@@ -284,7 +284,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <p className="text-gray-400">ankit972125@gmail.com</p>
+                    <p className="text-blue-700 dark:text-gray-400">ankit972125@gmail.com</p>
                   </div>
                 </div>
 
@@ -294,7 +294,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold">Phone</h3>
-                    <p className="text-gray-400">+91 815080798</p>
+                    <p className="text-blue-700 dark:text-gray-400">+91 815080798</p>
                   </div>
                 </div>
 
@@ -304,7 +304,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold">Education</h3>
-                    <p className="text-gray-400">B.Tech IT, Rajkiya Engineering College, Azamgarh</p>
+                    <p className="text-blue-700 dark:text-gray-400">B.Tech IT, Rajkiya Engineering College, Azamgarh</p>
                   </div>
                 </div>
 
@@ -314,7 +314,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold">Languages</h3>
-                    <p className="text-gray-400">English, Hindi, Sanskrit</p>
+                    <p className="text-blue-700 dark:text-gray-400">English, Hindi, Sanskrit</p>
                   </div>
                 </div>
               </div>
@@ -327,7 +327,7 @@ const Contact = () => {
                     href="https://leetcode.com/u/ankit972125/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-dark-800 border border-dark-700 rounded-lg flex items-center justify-center hover:border-primary-500 transition-colors duration-200"
+                    className="w-12 h-12 bg-white dark:bg-dark-800 border border-gray-200 dark:border-dark-700 rounded-lg flex items-center justify-center hover:border-blue-500 dark:hover:border-primary-500 transition-colors duration-200 text-blue-600 dark:text-white"
                   >
                     <Code className="w-6 h-6" />
                   </a>
@@ -335,7 +335,7 @@ const Contact = () => {
                     href="https://github.com/ankitsharma97"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-dark-800 border border-dark-700 rounded-lg flex items-center justify-center hover:border-primary-500 transition-colors duration-200"
+                    className="w-12 h-12 bg-white dark:bg-dark-800 border border-gray-200 dark:border-dark-700 rounded-lg flex items-center justify-center hover:border-blue-500 dark:hover:border-primary-500 transition-colors duration-200 text-blue-600 dark:text-white"
                   >
                     <Github className="w-6 h-6" />
                   </a>
@@ -343,7 +343,7 @@ const Contact = () => {
                     href="https://www.linkedin.com/in/ankit-sharma-64aa32255/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-dark-800 border border-dark-700 rounded-lg flex items-center justify-center hover:border-primary-500 transition-colors duration-200"
+                    className="w-12 h-12 bg-white dark:bg-dark-800 border border-gray-200 dark:border-dark-700 rounded-lg flex items-center justify-center hover:border-blue-500 dark:hover:border-primary-500 transition-colors duration-200 text-blue-600 dark:text-white"
                   >
                     <Linkedin className="w-6 h-6" />
                   </a>
@@ -351,7 +351,7 @@ const Contact = () => {
                     href="https://twitter.com/ANKITSH0161"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-dark-800 border border-dark-700 rounded-lg flex items-center justify-center hover:border-primary-500 transition-colors duration-200"
+                    className="w-12 h-12 bg-white dark:bg-dark-800 border border-gray-200 dark:border-dark-700 rounded-lg flex items-center justify-center hover:border-blue-500 dark:hover:border-primary-500 transition-colors duration-200 text-blue-600 dark:text-white"
                   >
                     <Twitter className="w-6 h-6" />
                   </a>
@@ -384,9 +384,9 @@ const Contact = () => {
               </div>
 
               {/* Availability */}
-              <div className="bg-dark-800/50 rounded-xl p-6 border border-dark-700">
-                <h3 className="font-semibold mb-2">Current Availability</h3>
-                <p className="text-gray-400 text-sm mb-4">
+              <div className="bg-white dark:bg-dark-800/50 rounded-xl p-6 border border-gray-200 dark:border-dark-700">
+                <h3 className="font-semibold mb-2 text-blue-900 dark:text-white">Current Availability</h3>
+                <p className="text-blue-700 dark:text-gray-400 text-sm mb-4">
                   I'm currently available for new projects and collaborations.
                 </p>
                 <div className="flex items-center space-x-2">

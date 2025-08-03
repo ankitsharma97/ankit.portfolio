@@ -104,7 +104,7 @@ const Experience = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Experience & Certifications
             </h1>
-            <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+            <p className="text-gray-600 dark:text-gray-400 max-w-3xl mx-auto text-lg">
               My professional journey through internships and certifications that have shaped my technical expertise.
             </p>
           </motion.div>
@@ -124,7 +124,7 @@ const Experience = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                  className="bg-dark-800 rounded-xl p-8 border border-dark-700"
+                  className="bg-white dark:bg-dark-800 rounded-xl p-8 border border-gray-200 dark:border-dark-700"
                 >
                   <div className="grid lg:grid-cols-3 gap-8">
                     {/* Left - Image and Basic Info */}
@@ -132,17 +132,17 @@ const Experience = () => {
                       <div className="bg-gradient-to-br from-primary-500/20 to-purple-500/20 rounded-lg p-6 text-center">
                         <div className="text-4xl mb-4">🏢</div>
                         <h3 className="text-xl font-bold text-primary-500">{internship.company}</h3>
-                        <p className="text-gray-400">{internship.position}</p>
+                        <p className="text-gray-600 dark:text-gray-400">{internship.position}</p>
                       </div>
                       
                       <div className="space-y-3">
                         <div className="flex items-center space-x-3">
                           <Calendar className="w-5 h-5 text-primary-500" />
-                          <span className="text-gray-300">{internship.duration}</span>
+                          <span className="text-gray-700 dark:text-gray-300">{internship.duration}</span>
                         </div>
                         <div className="flex items-center space-x-3">
                           <MapPin className="w-5 h-5 text-primary-500" />
-                          <span className="text-gray-300">{internship.location}</span>
+                          <span className="text-gray-700 dark:text-gray-300">{internship.location}</span>
                         </div>
                         <a
                           href={internship.certificate}
@@ -161,7 +161,7 @@ const Experience = () => {
                     <div className="lg:col-span-2 space-y-6">
                       <div>
                         <h4 className="text-lg font-semibold mb-3">Description</h4>
-                        <p className="text-gray-300 leading-relaxed">{internship.description}</p>
+                        <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{internship.description}</p>
                       </div>
 
                       <div>
@@ -173,7 +173,7 @@ const Experience = () => {
                           {internship.achievements.map((achievement, idx) => (
                             <li key={idx} className="flex items-start space-x-3">
                               <div className="w-2 h-2 bg-primary-500 rounded-full mt-2 flex-shrink-0"></div>
-                              <span className="text-gray-300">{achievement}</span>
+                              <span className="text-gray-700 dark:text-gray-300">{achievement}</span>
                             </li>
                           ))}
                         </ul>
@@ -215,32 +215,32 @@ const Experience = () => {
                  initial={{ opacity: 0, y: 20 }}
                  animate={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.5, delay: 0.5 }}
-                 className="bg-dark-800 rounded-xl p-6 border border-dark-700"
+                 className="bg-white dark:bg-dark-800 rounded-xl p-6 border border-gray-200 dark:border-dark-700"
                >
                  <h3 className="text-xl font-bold mb-4 text-primary-500">Programming Languages</h3>
                  <div className="space-y-3">
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">JavaScript</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">JavaScript</span>
                      <span className="text-sm text-green-500 bg-green-500/20 px-2 py-1 rounded">Advanced</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">TypeScript</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">TypeScript</span>
                      <span className="text-sm text-green-500 bg-green-500/20 px-2 py-1 rounded">Advanced</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">Python</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">Python</span>
                      <span className="text-sm text-green-500 bg-green-500/20 px-2 py-1 rounded">Advanced</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">C/C++</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">C/C++</span>
                      <span className="text-sm text-green-500 bg-green-500/20 px-2 py-1 rounded">Advanced</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">Java</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">Java</span>
                      <span className="text-sm text-blue-500 bg-blue-500/20 px-2 py-1 rounded">Intermediate</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">SQL</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">SQL</span>
                      <span className="text-sm text-blue-500 bg-blue-500/20 px-2 py-1 rounded">Intermediate</span>
                    </div>
                  </div>
@@ -250,36 +250,36 @@ const Experience = () => {
                  initial={{ opacity: 0, y: 20 }}
                  animate={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.5, delay: 0.6 }}
-                 className="bg-dark-800 rounded-xl p-6 border border-dark-700"
+                 className="bg-white dark:bg-dark-800 rounded-xl p-6 border border-gray-200 dark:border-dark-700"
                >
                  <h3 className="text-xl font-bold mb-4 text-primary-500">Frontend Development</h3>
                  <div className="space-y-3">
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">React.js</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">React.js</span>
                      <span className="text-sm text-green-500 bg-green-500/20 px-2 py-1 rounded">Advanced</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">Next.js</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">Next.js</span>
                      <span className="text-sm text-green-500 bg-green-500/20 px-2 py-1 rounded">Advanced</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">HTML5/CSS3</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">HTML5/CSS3</span>
                      <span className="text-sm text-green-500 bg-green-500/20 px-2 py-1 rounded">Advanced</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">Tailwind CSS</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">Tailwind CSS</span>
                      <span className="text-sm text-green-500 bg-green-500/20 px-2 py-1 rounded">Advanced</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">Material-UI</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">Material-UI</span>
                      <span className="text-sm text-blue-500 bg-blue-500/20 px-2 py-1 rounded">Intermediate</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">Bootstrap</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">Bootstrap</span>
                      <span className="text-sm text-blue-500 bg-blue-500/20 px-2 py-1 rounded">Intermediate</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">Redux</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">Redux</span>
                      <span className="text-sm text-blue-500 bg-blue-500/20 px-2 py-1 rounded">Intermediate</span>
                    </div>
                  </div>
@@ -289,36 +289,36 @@ const Experience = () => {
                  initial={{ opacity: 0, y: 20 }}
                  animate={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.5, delay: 0.7 }}
-                 className="bg-dark-800 rounded-xl p-6 border border-dark-700"
+                 className="bg-white dark:bg-dark-800 rounded-xl p-6 border border-gray-200 dark:border-dark-700"
                >
                  <h3 className="text-xl font-bold mb-4 text-primary-500">Backend Development</h3>
                  <div className="space-y-3">
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">Django</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">Django</span>
                      <span className="text-sm text-green-500 bg-green-500/20 px-2 py-1 rounded">Advanced</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">Django REST Framework</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">Django REST Framework</span>
                      <span className="text-sm text-green-500 bg-green-500/20 px-2 py-1 rounded">Advanced</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">FastAPI</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">FastAPI</span>
                      <span className="text-sm text-blue-500 bg-blue-500/20 px-2 py-1 rounded">Intermediate</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">Node.js</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">Node.js</span>
                      <span className="text-sm text-blue-500 bg-blue-500/20 px-2 py-1 rounded">Intermediate</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">Express.js</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">Express.js</span>
                      <span className="text-sm text-blue-500 bg-blue-500/20 px-2 py-1 rounded">Intermediate</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">Socket.io</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">Socket.io</span>
                      <span className="text-sm text-blue-500 bg-blue-500/20 px-2 py-1 rounded">Intermediate</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">Celery</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">Celery</span>
                      <span className="text-sm text-blue-500 bg-blue-500/20 px-2 py-1 rounded">Intermediate</span>
                    </div>
                  </div>
@@ -328,40 +328,40 @@ const Experience = () => {
                  initial={{ opacity: 0, y: 20 }}
                  animate={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.5, delay: 0.8 }}
-                 className="bg-dark-800 rounded-xl p-6 border border-dark-700"
+                 className="bg-white dark:bg-dark-800 rounded-xl p-6 border border-gray-200 dark:border-dark-700"
                >
                  <h3 className="text-xl font-bold mb-4 text-primary-500">Database & DevOps</h3>
                  <div className="space-y-3">
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">PostgreSQL</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">PostgreSQL</span>
                      <span className="text-sm text-green-500 bg-green-500/20 px-2 py-1 rounded">Advanced</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">MongoDB</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">MongoDB</span>
                      <span className="text-sm text-blue-500 bg-blue-500/20 px-2 py-1 rounded">Intermediate</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">MySQL</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">MySQL</span>
                      <span className="text-sm text-blue-500 bg-blue-500/20 px-2 py-1 rounded">Intermediate</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">Redis</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">Redis</span>
                      <span className="text-sm text-blue-500 bg-blue-500/20 px-2 py-1 rounded">Intermediate</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">AWS</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">AWS</span>
                      <span className="text-sm text-blue-500 bg-blue-500/20 px-2 py-1 rounded">Intermediate</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">Docker</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">Docker</span>
                      <span className="text-sm text-blue-500 bg-blue-500/20 px-2 py-1 rounded">Intermediate</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">Vercel</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">Vercel</span>
                      <span className="text-sm text-blue-500 bg-blue-500/20 px-2 py-1 rounded">Intermediate</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">Heroku</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">Heroku</span>
                      <span className="text-sm text-blue-500 bg-blue-500/20 px-2 py-1 rounded">Intermediate</span>
                    </div>
                  </div>
@@ -371,40 +371,40 @@ const Experience = () => {
                  initial={{ opacity: 0, y: 20 }}
                  animate={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.5, delay: 0.9 }}
-                 className="bg-dark-800 rounded-xl p-6 border border-dark-700"
+                 className="bg-white dark:bg-dark-800 rounded-xl p-6 border border-gray-200 dark:border-dark-700"
                >
                  <h3 className="text-xl font-bold mb-4 text-primary-500">AI/ML & Tools</h3>
                  <div className="space-y-3">
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">OpenAI API</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">OpenAI API</span>
                      <span className="text-sm text-green-500 bg-green-500/20 px-2 py-1 rounded">Advanced</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">LangChain</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">LangChain</span>
                      <span className="text-sm text-blue-500 bg-blue-500/20 px-2 py-1 rounded">Intermediate</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">Vector Databases</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">Vector Databases</span>
                      <span className="text-sm text-blue-500 bg-blue-500/20 px-2 py-1 rounded">Intermediate</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">Pinecone</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">Pinecone</span>
                      <span className="text-sm text-blue-500 bg-blue-500/20 px-2 py-1 rounded">Intermediate</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">Git</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">Git</span>
                      <span className="text-sm text-green-500 bg-green-500/20 px-2 py-1 rounded">Advanced</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">Jira</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">Jira</span>
                      <span className="text-sm text-blue-500 bg-blue-500/20 px-2 py-1 rounded">Intermediate</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">Postman</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">Postman</span>
                      <span className="text-sm text-blue-500 bg-blue-500/20 px-2 py-1 rounded">Intermediate</span>
                    </div>
-                   <div className="flex justify-between items-center p-3 bg-dark-700 rounded-lg">
-                     <span className="font-medium text-white">Trello</span>
+                   <div className="flex justify-between items-center p-3 bg-gray-100 dark:bg-dark-700 rounded-lg">
+                     <span className="font-medium text-gray-900 dark:text-white">Trello</span>
                      <span className="text-sm text-blue-500 bg-blue-500/20 px-2 py-1 rounded">Intermediate</span>
                    </div>
                  </div>
@@ -414,7 +414,7 @@ const Experience = () => {
                  initial={{ opacity: 0, y: 20 }}
                  animate={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.5, delay: 1.0 }}
-                 className="bg-dark-800 rounded-xl p-6 border border-dark-700"
+                 className="bg-white dark:bg-dark-800 rounded-xl p-6 border border-gray-200 dark:border-dark-700"
                >
                  <h3 className="text-xl font-bold mb-4 text-primary-500">Achievements & Ratings</h3>
                  <div className="space-y-3">
@@ -452,44 +452,44 @@ const Experience = () => {
                  initial={{ opacity: 0, y: 20 }}
                  animate={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.5, delay: 1.2 }}
-                 className="bg-dark-800 rounded-xl p-6 border border-dark-700 text-center"
+                 className="bg-white dark:bg-dark-800 rounded-xl p-6 border border-gray-200 dark:border-dark-700 text-center"
                >
                  <div className="text-4xl mb-4">📊</div>
-                 <h3 className="font-semibold text-white mb-2">1000+ Problems Solved</h3>
-                 <p className="text-sm text-gray-400">Across GeeksforGeeks, LeetCode, and HackerRank</p>
+                 <h3 className="font-semibold text-gray-900 dark:text-white mb-2">1000+ Problems Solved</h3>
+                 <p className="text-sm text-gray-600 dark:text-gray-400">Across GeeksforGeeks, LeetCode, and HackerRank</p>
                </motion.div>
 
                <motion.div
                  initial={{ opacity: 0, y: 20 }}
                  animate={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.5, delay: 1.3 }}
-                 className="bg-dark-800 rounded-xl p-6 border border-dark-700 text-center"
+                 className="bg-white dark:bg-dark-800 rounded-xl p-6 border border-gray-200 dark:border-dark-700 text-center"
                >
                  <div className="text-4xl mb-4">🚀</div>
-                 <h3 className="font-semibold text-white mb-2">20+ Projects Built</h3>
-                 <p className="text-sm text-gray-400">Using modern technologies and best practices</p>
+                 <h3 className="font-semibold text-gray-900 dark:text-white mb-2">20+ Projects Built</h3>
+                 <p className="text-sm text-gray-600 dark:text-gray-400">Using modern technologies and best practices</p>
                </motion.div>
 
                <motion.div
                  initial={{ opacity: 0, y: 20 }}
                  animate={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.5, delay: 1.4 }}
-                 className="bg-dark-800 rounded-xl p-6 border border-dark-700 text-center"
+                 className="bg-white dark:bg-dark-800 rounded-xl p-6 border border-gray-200 dark:border-dark-700 text-center"
                >
                  <div className="text-4xl mb-4">💼</div>
-                 <h3 className="font-semibold text-white mb-2">3 Successful Internships</h3>
-                 <p className="text-sm text-gray-400">Real-world project experience</p>
+                 <h3 className="font-semibold text-gray-900 dark:text-white mb-2">3 Successful Internships</h3>
+                 <p className="text-sm text-gray-600 dark:text-gray-400">Real-world project experience</p>
                </motion.div>
 
                <motion.div
                  initial={{ opacity: 0, y: 20 }}
                  animate={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.5, delay: 1.5 }}
-                 className="bg-dark-800 rounded-xl p-6 border border-dark-700 text-center"
+                 className="bg-white dark:bg-dark-800 rounded-xl p-6 border border-gray-200 dark:border-dark-700 text-center"
                >
                  <div className="text-4xl mb-4">⭐</div>
-                 <h3 className="font-semibold text-white mb-2">5★ HackerRank C++</h3>
-                 <p className="text-sm text-gray-400">Top-rated problem solver</p>
+                 <h3 className="font-semibold text-gray-900 dark:text-white mb-2">5★ HackerRank C++</h3>
+                 <p className="text-sm text-gray-600 dark:text-gray-400">Top-rated problem solver</p>
                </motion.div>
             </div>
           </motion.div>
@@ -508,16 +508,16 @@ const Experience = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 1.7 + index * 0.1 }}
-                  className="bg-dark-800 rounded-xl p-6 border border-dark-700 hover:border-primary-500/50 transition-colors duration-200"
+                  className="bg-white dark:bg-dark-800 rounded-xl p-6 border border-gray-200 dark:border-dark-700 hover:border-blue-500/50 dark:hover:border-primary-500/50 transition-colors duration-200"
                 >
                   <div className="text-center space-y-4">
                     <div className="bg-gradient-to-br from-primary-500/20 to-purple-500/20 rounded-lg p-4">
                       <div className="text-3xl mb-2">🏆</div>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-white mb-1">{cert.name}</h3>
-                      <p className="text-sm text-gray-400">{cert.issuer}</p>
-                      <p className="text-xs text-gray-500">{cert.date}</p>
+                      <h3 className="font-semibold text-gray-900 dark:text-white mb-1">{cert.name}</h3>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">{cert.issuer}</p>
+                      <p className="text-xs text-gray-500 dark:text-gray-500">{cert.date}</p>
                     </div>
                     <a
                       href={cert.certificate}

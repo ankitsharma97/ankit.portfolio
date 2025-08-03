@@ -28,7 +28,7 @@ const ProjectCard = ({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className="group relative bg-dark-800 rounded-xl overflow-hidden border border-dark-700 hover:border-primary-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/10"
+      className="group relative bg-white dark:bg-dark-800 rounded-xl overflow-hidden border border-gray-200 dark:border-dark-700 hover:border-blue-500/50 dark:hover:border-primary-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 dark:hover:shadow-primary-500/10"
     >
       {/* Image */}
       <div className="relative h-48 overflow-hidden">
@@ -37,7 +37,7 @@ const ProjectCard = ({
           alt={title}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 to-purple-500/20 opacity-60 group-hover:opacity-40 transition-opacity duration-300" />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 dark:from-primary-500/20 dark:to-purple-500/20 opacity-60 group-hover:opacity-40 transition-opacity duration-300" />
         
         {/* Overlay on hover */}
         <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -47,7 +47,7 @@ const ProjectCard = ({
                 href={liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-primary-500 rounded-full text-white hover:bg-primary-600 transition-colors duration-200"
+                className="p-3 bg-blue-600 dark:bg-primary-500 rounded-full text-white hover:bg-blue-700 dark:hover:bg-primary-600 transition-colors duration-200"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -59,7 +59,7 @@ const ProjectCard = ({
                 href={githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-dark-700 rounded-full text-white hover:bg-dark-600 transition-colors duration-200"
+                className="p-3 bg-gray-700 dark:bg-dark-700 rounded-full text-white hover:bg-gray-600 dark:hover:bg-dark-600 transition-colors duration-200"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -70,12 +70,12 @@ const ProjectCard = ({
         </div>
 
         <div className="absolute top-4 left-4">
-          <span className="bg-primary-500/20 text-primary-500 px-2 py-1 rounded text-xs font-medium">
+          <span className="bg-blue-500/20 dark:bg-primary-500/20 text-blue-600 dark:text-primary-500 px-2 py-1 rounded text-xs font-medium">
             {category}
           </span>
         </div>
         <div className="absolute top-4 right-4">
-          <span className="bg-dark-700/80 text-gray-300 px-2 py-1 rounded text-xs">
+          <span className="bg-gray-700/80 dark:bg-dark-700/80 text-gray-300 px-2 py-1 rounded text-xs">
             {year}
           </span>
         </div>
@@ -84,10 +84,10 @@ const ProjectCard = ({
       {/* Content */}
       <div className="p-6 space-y-4">
         <div>
-          <h3 className="text-xl font-semibold text-white group-hover:text-primary-500 transition-colors duration-200 mb-2">
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-primary-500 transition-colors duration-200 mb-2">
             {title}
           </h3>
-          <p className="text-gray-400 text-sm leading-relaxed line-clamp-3">
+          <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed line-clamp-3">
             {description}
           </p>
         </div>
@@ -97,7 +97,7 @@ const ProjectCard = ({
           {technologies.map((tech) => (
             <span
               key={tech}
-              className="bg-dark-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-primary-500/20 hover:text-primary-500 transition-colors duration-200"
+              className="bg-gray-200 dark:bg-dark-700 text-gray-700 dark:text-gray-300 px-2 py-1 rounded text-xs hover:bg-blue-500/20 hover:text-blue-600 dark:hover:bg-primary-500/20 dark:hover:text-primary-500 transition-colors duration-200"
             >
               {tech}
             </span>
@@ -105,14 +105,14 @@ const ProjectCard = ({
         </div>
 
         {/* Links */}
-        <div className="flex items-center justify-between pt-4 border-t border-dark-700">
+        <div className="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-dark-700">
           <div className="flex gap-2">
             {liveUrl && (
               <a
                 href={liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1 text-primary-500 hover:text-primary-400 text-sm font-medium transition-colors duration-200"
+                className="flex items-center gap-1 text-blue-600 dark:text-primary-500 hover:text-blue-500 dark:hover:text-primary-400 text-sm font-medium transition-colors duration-200"
               >
                 <ExternalLink className="w-4 h-4" />
                 Live Demo
@@ -123,14 +123,14 @@ const ProjectCard = ({
                 href={githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1 text-gray-400 hover:text-white text-sm font-medium transition-colors duration-200"
+                className="flex items-center gap-1 text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white text-sm font-medium transition-colors duration-200"
               >
                 <Github className="w-4 h-4" />
                 Code
               </a>
             )}
           </div>
-          <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-primary-500 transition-colors duration-200 group-hover:translate-x-1" />
+          <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-blue-600 dark:group-hover:text-primary-500 transition-colors duration-200 group-hover:translate-x-1" />
         </div>
       </div>
     </motion.div>

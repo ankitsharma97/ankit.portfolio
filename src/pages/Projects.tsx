@@ -284,7 +284,7 @@ const Projects = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               My Projects
             </h1>
-            <p className="text-gray-400 max-w-2xl mx-auto">
+            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
               Explore my latest work and see how I bring ideas to life through code.
             </p>
           </motion.div>
@@ -302,8 +302,8 @@ const Projects = () => {
                 onClick={() => setActiveFilter(filter)}
                 className={`px-6 py-2 rounded-full font-medium transition-all duration-200 ${
                   activeFilter === filter
-                    ? 'bg-primary-500 text-white'
-                    : 'bg-dark-700 text-gray-300 hover:bg-dark-600 hover:text-white'
+                    ? 'bg-blue-600 dark:bg-primary-500 text-white'
+                    : 'bg-gray-200 dark:bg-dark-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-dark-600 hover:text-gray-900 dark:hover:text-white'
                 }`}
               >
                 {filter}
@@ -335,7 +335,7 @@ const Projects = () => {
               animate={{ opacity: 1 }}
               className="text-center py-12"
             >
-              <p className="text-gray-400 text-lg">
+              <p className="text-gray-600 dark:text-gray-400 text-lg">
                 No projects found in this category.
               </p>
             </motion.div>
